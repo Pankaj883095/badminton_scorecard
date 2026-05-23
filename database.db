@@ -1,0 +1,10 @@
+CREATE DATABASE badminton_db;
+USE badminton_db;
+CREATE TABLE scorecard (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    team1 VARCHAR(100) NOT NULL,
+    team2 VARCHAR(100) NOT NULL,
+    score1 INT NOT NULL,
+    score2 INT NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
